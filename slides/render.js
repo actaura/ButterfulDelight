@@ -18,7 +18,6 @@ function renderCover(slide, meta) {
       </div>
       <div class="cover-swipe">
         <span>${slide.swipeLabel}</span>
-        <span class="cover-swipe-arrow">&#8594;</span>
       </div>
     </div>
   `;
@@ -96,12 +95,12 @@ function renderMetrics(slide) {
       <div class="metric-name">${m.label}</div>
       <div class="metric-compare">
         <div class="metric-figure metric-figure--before">
-          <div class="metric-figure-label">Sebelum</div>
+          <div class="metric-figure-label">Before</div>
           <div class="metric-figure-value">${m.before}</div>
         </div>
         <div class="metric-sep">&#8594;</div>
         <div class="metric-figure metric-figure--after">
-          <div class="metric-figure-label">Sesudah</div>
+          <div class="metric-figure-label">After</div>
           <div class="metric-figure-value">${m.after}</div>
         </div>
       </div>
