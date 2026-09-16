@@ -1,8 +1,8 @@
 {
   "meta": {
-    "author": "Taufiq Raihan Achmad",
+    "author": "Achmad Taufiq Raihan",
     "role": "Logistics Management Student, ULBI — ex Intern, PT Pos Indonesia",
-    "footerName": "Taufiq Raihan Achmad",
+    "footerName": "Achmad Taufiq Raihan",
     "totalSlides": 8
   },
   "slides": [
@@ -12,7 +12,8 @@
       "kicker": "Data Analysis Project",
       "title": "Simulasi Optimasi Rute & Biaya Distribusi Bansos Beras",
       "subtitle": "Studi Kasus: Kantor Regional III Bandung, PT Pos Indonesia — Jawa Barat",
-      "author": "Taufiq Raihan Achmad",
+      "watermark": "33%",
+      "author": "Achmad Taufiq Raihan",
       "authorRole": "Mahasiswa Logistics Management, ULBI · Eks-PKL PT Pos Indonesia",
       "swipeLabel": "Geser untuk lihat hasil analisis"
     },
@@ -104,7 +105,7 @@
       "title": "Data gap bukan akhir analisis — itu awalnya",
       "description": "Dari kolom tarif yang kosong, project ini berkembang jadi simulasi optimasi rute yang memangkas 33% biaya midlemile secara terdokumentasi dan dapat diaudit.",
       "contactLabel": "Terima kasih sudah membaca",
-      "contactName": "Taufiq Raihan Achmad",
+      "contactName": "Achmad Taufiq Raihan",
       "contactHandle": "taufiq.raihan.achmad@gmail.com"
     }
   ]

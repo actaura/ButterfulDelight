@@ -3,19 +3,14 @@ async function loadData() {
   return res.json();
 }
 
-function chrome(slide, meta) {
-  return `
-    <div class="slide-number">${String(slide.id).padStart(2, "0")} / ${String(meta.totalSlides).padStart(2, "0")}</div>
-    <div class="slide-footer">${meta.footerName}</div>
-  `;
-}
-
 function renderCover(slide, meta) {
   return `
     <div class="cover-kicker">${slide.kicker}</div>
     <div class="cover-title">${slide.title}</div>
     <div class="cover-subtitle">${slide.subtitle}</div>
-    <div style="margin-top:auto;">
+    <div class="cover-accent-line"></div>
+    <div class="cover-watermark">${slide.watermark || ""}</div>
+    <div style="margin-top:auto; position:relative; z-index:1;">
       <div class="cover-rule"></div>
       <div class="cover-author-block">
         <div class="cover-author-name">${slide.author}</div>
@@ -171,10 +166,15 @@ async function main() {
   }
   const renderer = RENDERERS[slide.layout];
   const body = renderer ? renderer(slide, data.meta) : `<p>Unknown layout: ${slide.layout}</p>`;
-  const showChrome = slide.layout !== "cover";
+  // Cover already shows the name prominently in its own author block, so the
+  // small footer name is skipped there to avoid showing it twice.
+  const isCover = slide.layout === "cover";
+  const slideNumber = `<div class="slide-number">${String(slide.id).padStart(2, "0")} / ${String(data.meta.totalSlides).padStart(2, "0")}</div>`;
+  const footerName = `<div class="slide-footer">${data.meta.footerName}</div>`;
   document.getElementById("app").innerHTML = `
     <div class="slide slide--${slide.layout}">
-      ${showChrome ? chrome(slide, data.meta) : `<div class="slide-number">${String(slide.id).padStart(2, "0")} / ${String(data.meta.totalSlides).padStart(2, "0")}</div><div class="slide-footer">${data.meta.footerName}</div>`}
+      ${slideNumber}
+      ${isCover ? "" : footerName}
       ${body}
     </div>
   `;

@@ -104,6 +104,8 @@ html, body {
 .slide--cover {
   justify-content: space-between;
   padding-top: 120px;
+  position: relative;
+  overflow: hidden;
 }
 
 .cover-kicker {
@@ -132,6 +134,34 @@ html, body {
   line-height: 1.5;
   color: var(--ink-secondary);
   max-width: 760px;
+}
+
+.cover-accent-line {
+  width: 96px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--green);
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.cover-watermark {
+  position: absolute;
+  left: 0;
+  right: 56px;
+  top: 760px;
+  z-index: 0;
+  text-align: right;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 420px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--green);
+  opacity: 0.08;
+  pointer-events: none;
+  user-select: none;
 }
 
 .cover-rule {
