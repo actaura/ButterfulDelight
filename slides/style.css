@@ -101,11 +101,36 @@ html, body {
 }
 
 /* ============ COVER ============ */
+.slide-content {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-ring {
+  position: absolute;
+  z-index: 0;
+  width: 560px;
+  height: 560px;
+  right: -180px;
+  bottom: -180px;
+  border-radius: 50%;
+  border: 26px solid var(--green);
+  opacity: 0.06;
+  pointer-events: none;
+}
+
 .slide--cover {
-  justify-content: space-between;
   padding-top: 120px;
   position: relative;
   overflow: hidden;
+}
+
+.slide--cover .slide-content {
+  justify-content: space-between;
 }
 
 .cover-kicker {
@@ -324,10 +349,10 @@ html, body {
 
 /* ============ BIG NUMBER (before/after) ============ */
 .bignumber-wrap {
-  margin-top: 48px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 20px;
 }
 
 .bignumber-row {
@@ -337,7 +362,7 @@ html, body {
   background: var(--bg-card);
   border: 1px solid var(--line);
   border-radius: 24px;
-  padding: 40px 44px;
+  padding: 32px 44px;
 }
 
 .bignumber-row--after {
@@ -372,25 +397,26 @@ html, body {
 }
 
 .delta-badge {
-  margin: 12px auto 0;
+  margin: 8px auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 
 .delta-value {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 96px;
+  font-size: 260px;
   color: var(--green);
-  line-height: 1;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
 }
 
 .delta-label {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 22px;
+  font-size: 26px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--ink-secondary);
@@ -495,7 +521,7 @@ html, body {
 }
 
 /* ============ CLOSING ============ */
-.slide--closing {
+.slide--closing .slide-content {
   justify-content: center;
 }
 

@@ -169,13 +169,20 @@ async function main() {
   // Cover already shows the name prominently in its own author block, so the
   // small footer name is skipped there to avoid showing it twice.
   const isCover = slide.layout === "cover";
+  // Layouts whose content leaves a large empty area get a faint ring accent
+  // so they don't read as unfinished. Cover has its own watermark, and
+  // bignumber is intentionally left bare so the -33% figure stays the sole
+  // focal point.
+  const RING_LAYOUTS = new Set(["context", "insight", "methodology", "metrics", "tools", "closing"]);
+  const ring = RING_LAYOUTS.has(slide.layout) ? `<div class="bg-ring"></div>` : "";
   const slideNumber = `<div class="slide-number">${String(slide.id).padStart(2, "0")} / ${String(data.meta.totalSlides).padStart(2, "0")}</div>`;
   const footerName = `<div class="slide-footer">${data.meta.footerName}</div>`;
   document.getElementById("app").innerHTML = `
     <div class="slide slide--${slide.layout}">
       ${slideNumber}
       ${isCover ? "" : footerName}
-      ${body}
+      ${ring}
+      <div class="slide-content">${body}</div>
     </div>
   `;
   document.body.setAttribute("data-ready", "true");
