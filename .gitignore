@@ -2,3 +2,4 @@ node_modules/
 output/*.png
 output/*.mp4
 output/*.gif
+output/*.pdf
