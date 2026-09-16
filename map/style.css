@@ -154,6 +154,16 @@ html, body {
   flex-shrink: 0;
 }
 
+.glow-ring {
+  fill: var(--green);
+  stroke: none;
+  pointer-events: none;
+}
+
+.canvas {
+  will-change: opacity;
+}
+
 .footer-name {
   position: absolute;
   right: 80px;
