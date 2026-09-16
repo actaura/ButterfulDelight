@@ -1,0 +1,391 @@
+{
+  "meta": {
+    "note": "Origins are illustrative placements clustered around real Bulog Sub Divre hub cities in West Java (actual per-warehouse coordinates were not in the source dataset). Destination allocationTons values are an illustrative distribution normalized to the project's real total (36,454 tons), since a per-regency breakdown wasn't in the source dataset."
+  },
+  "origins": [
+    {
+      "id": "W01",
+      "hub": "Bandung",
+      "lat": -6.87497,
+      "lng": 107.58431
+    },
+    {
+      "id": "W02",
+      "hub": "Bandung",
+      "lat": -6.9325,
+      "lng": 107.67489
+    },
+    {
+      "id": "W03",
+      "hub": "Bandung",
+      "lat": -6.89234,
+      "lng": 107.64398
+    },
+    {
+      "id": "W04",
+      "hub": "Bandung",
+      "lat": -6.99358,
+      "lng": 107.66564
+    },
+    {
+      "id": "W05",
+      "hub": "Bandung",
+      "lat": -7.01794,
+      "lng": 107.64882
+    },
+    {
+      "id": "W06",
+      "hub": "Bandung",
+      "lat": -6.94563,
+      "lng": 107.47531
+    },
+    {
+      "id": "W07",
+      "hub": "Bandung",
+      "lat": -6.85199,
+      "lng": 107.54376
+    },
+    {
+      "id": "W08",
+      "hub": "Bandung",
+      "lat": -7.00079,
+      "lng": 107.65705
+    },
+    {
+      "id": "W09",
+      "hub": "Sukabumi",
+      "lat": -6.99131,
+      "lng": 106.98682
+    },
+    {
+      "id": "W10",
+      "hub": "Sukabumi",
+      "lat": -6.95352,
+      "lng": 106.91606
+    },
+    {
+      "id": "W11",
+      "hub": "Sukabumi",
+      "lat": -6.85866,
+      "lng": 106.93462
+    },
+    {
+      "id": "W12",
+      "hub": "Sukabumi",
+      "lat": -6.89317,
+      "lng": 106.97512
+    },
+    {
+      "id": "W13",
+      "hub": "Sukabumi",
+      "lat": -6.88399,
+      "lng": 106.97514
+    },
+    {
+      "id": "W14",
+      "hub": "Sukabumi",
+      "lat": -6.97271,
+      "lng": 106.87951
+    },
+    {
+      "id": "W15",
+      "hub": "Cirebon",
+      "lat": -6.66767,
+      "lng": 108.52039
+    },
+    {
+      "id": "W16",
+      "hub": "Cirebon",
+      "lat": -6.57402,
+      "lng": 108.54274
+    },
+    {
+      "id": "W17",
+      "hub": "Cirebon",
+      "lat": -6.78407,
+      "lng": 108.49862
+    },
+    {
+      "id": "W18",
+      "hub": "Cirebon",
+      "lat": -6.60935,
+      "lng": 108.60976
+    },
+    {
+      "id": "W19",
+      "hub": "Cirebon",
+      "lat": -6.64492,
+      "lng": 108.59439
+    },
+    {
+      "id": "W20",
+      "hub": "Cirebon",
+      "lat": -6.7129,
+      "lng": 108.65787
+    },
+    {
+      "id": "W21",
+      "hub": "Purwakarta",
+      "lat": -6.59378,
+      "lng": 107.34391
+    },
+    {
+      "id": "W22",
+      "hub": "Purwakarta",
+      "lat": -6.65318,
+      "lng": 107.50717
+    },
+    {
+      "id": "W23",
+      "hub": "Purwakarta",
+      "lat": -6.52366,
+      "lng": 107.44763
+    },
+    {
+      "id": "W24",
+      "hub": "Purwakarta",
+      "lat": -6.50241,
+      "lng": 107.41928
+    },
+    {
+      "id": "W25",
+      "hub": "Purwakarta",
+      "lat": -6.42718,
+      "lng": 107.47587
+    },
+    {
+      "id": "W26",
+      "hub": "Tasikmalaya",
+      "lat": -7.3727,
+      "lng": 108.26716
+    },
+    {
+      "id": "W27",
+      "hub": "Tasikmalaya",
+      "lat": -7.38832,
+      "lng": 108.1792
+    },
+    {
+      "id": "W28",
+      "hub": "Tasikmalaya",
+      "lat": -7.36856,
+      "lng": 108.29042
+    },
+    {
+      "id": "W29",
+      "hub": "Tasikmalaya",
+      "lat": -7.27052,
+      "lng": 108.21532
+    },
+    {
+      "id": "W30",
+      "hub": "Tasikmalaya",
+      "lat": -7.34955,
+      "lng": 108.16567
+    },
+    {
+      "id": "W31",
+      "hub": "Karawang",
+      "lat": -6.38796,
+      "lng": 107.22592
+    },
+    {
+      "id": "W32",
+      "hub": "Karawang",
+      "lat": -6.29072,
+      "lng": 107.29366
+    },
+    {
+      "id": "W33",
+      "hub": "Karawang",
+      "lat": -6.32403,
+      "lng": 107.42416
+    },
+    {
+      "id": "W34",
+      "hub": "Karawang",
+      "lat": -6.30368,
+      "lng": 107.36738
+    },
+    {
+      "id": "W35",
+      "hub": "Bogor",
+      "lat": -6.53205,
+      "lng": 106.89354
+    },
+    {
+      "id": "W36",
+      "hub": "Bogor",
+      "lat": -6.66878,
+      "lng": 106.83671
+    },
+    {
+      "id": "W37",
+      "hub": "Bogor",
+      "lat": -6.56703,
+      "lng": 106.88336
+    },
+    {
+      "id": "W38",
+      "hub": "Bogor",
+      "lat": -6.59715,
+      "lng": 106.90536
+    }
+  ],
+  "destinations": [
+    {
+      "name": "Kota Bandung",
+      "lat": -6.9175,
+      "lng": 107.6191,
+      "allocationTons": 2019,
+      "nearestOriginId": "W03"
+    },
+    {
+      "name": "Kab. Bandung",
+      "lat": -7.0264,
+      "lng": 107.5709,
+      "allocationTons": 999,
+      "nearestOriginId": "W05"
+    },
+    {
+      "name": "Kab. Bandung Barat",
+      "lat": -6.836,
+      "lng": 107.488,
+      "allocationTons": 1385,
+      "nearestOriginId": "W07"
+    },
+    {
+      "name": "Kota Cimahi",
+      "lat": -6.8841,
+      "lng": 107.5413,
+      "allocationTons": 1302,
+      "nearestOriginId": "W07"
+    },
+    {
+      "name": "Kab. Sumedang",
+      "lat": -6.8583,
+      "lng": 107.9225,
+      "allocationTons": 2202,
+      "nearestOriginId": "W02"
+    },
+    {
+      "name": "Kab. Garut",
+      "lat": -7.2158,
+      "lng": 107.9081,
+      "allocationTons": 2089,
+      "nearestOriginId": "W30"
+    },
+    {
+      "name": "Kota Tasikmalaya",
+      "lat": -7.3506,
+      "lng": 108.2172,
+      "allocationTons": 2505,
+      "nearestOriginId": "W30"
+    },
+    {
+      "name": "Kab. Tasikmalaya",
+      "lat": -7.3274,
+      "lng": 108.2207,
+      "allocationTons": 1090,
+      "nearestOriginId": "W29"
+    },
+    {
+      "name": "Kab. Ciamis",
+      "lat": -7.3269,
+      "lng": 108.3535,
+      "allocationTons": 1632,
+      "nearestOriginId": "W28"
+    },
+    {
+      "name": "Kota Banjar",
+      "lat": -7.3746,
+      "lng": 108.5339,
+      "allocationTons": 1006,
+      "nearestOriginId": "W28"
+    },
+    {
+      "name": "Kab. Pangandaran",
+      "lat": -7.683,
+      "lng": 108.6535,
+      "allocationTons": 1294,
+      "nearestOriginId": "W28"
+    },
+    {
+      "name": "Kab. Cianjur",
+      "lat": -6.8168,
+      "lng": 107.1425,
+      "allocationTons": 1777,
+      "nearestOriginId": "W13"
+    },
+    {
+      "name": "Kab. Sukabumi",
+      "lat": -6.95,
+      "lng": 106.83,
+      "allocationTons": 1001,
+      "nearestOriginId": "W14"
+    },
+    {
+      "name": "Kota Sukabumi",
+      "lat": -6.9277,
+      "lng": 106.93,
+      "allocationTons": 1263,
+      "nearestOriginId": "W10"
+    },
+    {
+      "name": "Kab. Cirebon",
+      "lat": -6.7063,
+      "lng": 108.557,
+      "allocationTons": 2039,
+      "nearestOriginId": "W15"
+    },
+    {
+      "name": "Kota Cirebon",
+      "lat": -6.732,
+      "lng": 108.5523,
+      "allocationTons": 1848,
+      "nearestOriginId": "W15"
+    },
+    {
+      "name": "Kab. Majalengka",
+      "lat": -6.836,
+      "lng": 108.2273,
+      "allocationTons": 1297,
+      "nearestOriginId": "W17"
+    },
+    {
+      "name": "Kab. Kuningan",
+      "lat": -6.9762,
+      "lng": 108.4839,
+      "allocationTons": 1928,
+      "nearestOriginId": "W17"
+    },
+    {
+      "name": "Kab. Indramayu",
+      "lat": -6.3264,
+      "lng": 108.32,
+      "allocationTons": 2342,
+      "nearestOriginId": "W16"
+    },
+    {
+      "name": "Kab. Subang",
+      "lat": -6.5695,
+      "lng": 107.7604,
+      "allocationTons": 972,
+      "nearestOriginId": "W22"
+    },
+    {
+      "name": "Kab. Karawang",
+      "lat": -6.3227,
+      "lng": 107.3376,
+      "allocationTons": 2335,
+      "nearestOriginId": "W34"
+    },
+    {
+      "name": "Kab. Purwakarta",
+      "lat": -6.5569,
+      "lng": 107.4432,
+      "allocationTons": 2129,
+      "nearestOriginId": "W23"
+    }
+  ]
+}
