@@ -1,235 +1,277 @@
 {
   "meta": {
-    "note": "Origins are illustrative placements clustered around real Bulog Sub Divre hub cities in West Java (actual per-warehouse coordinates were not in the source dataset). Destination allocationTons values are an illustrative distribution normalized to the project's real total (36,454 tons), since a per-regency breakdown wasn't in the source dataset."
+    "note": "Warehouse origins are positioned at their primary-serving regency's coordinate (small ~3-5km jitter applied so co-located warehouses don't fully overlap), derived from warehouse_regency_edges.csv. Flow lines are the real 48 warehouse-to-regency edges from that dataset; destination allocationTons is the sum of edge tonnage per destination.",
+    "totalTons": 36453.92,
+    "edgeCount": 48,
+    "warehouseCount": 38,
+    "destinationCount": 22
   },
   "origins": [
     {
       "id": "W01",
-      "hub": "Bandung",
-      "lat": -6.87497,
-      "lng": 107.58431
+      "name": "GBB. SUKAGALIH",
+      "primaryRegency": "Kab. Garut",
+      "lat": -7.207037,
+      "lng": 107.943335
     },
     {
       "id": "W02",
-      "hub": "Bandung",
-      "lat": -6.9325,
-      "lng": 107.67489
+      "name": "GBB. PASIR HALANG",
+      "primaryRegency": "Kab. Sukabumi",
+      "lat": -6.985896,
+      "lng": 106.854168
     },
     {
       "id": "W03",
-      "hub": "Bandung",
-      "lat": -6.89234,
-      "lng": 107.64398
+      "name": "GBB. LINGGA JAYA",
+      "primaryRegency": "Kab. Tasikmalaya",
+      "lat": -7.369749,
+      "lng": 108.211743
     },
     {
       "id": "W04",
-      "hub": "Bandung",
-      "lat": -6.99358,
-      "lng": 107.66564
+      "name": "GBB. UTAMA",
+      "primaryRegency": "Kab. Bandung Barat",
+      "lat": -6.861819,
+      "lng": 107.479395
     },
     {
       "id": "W05",
-      "hub": "Bandung",
-      "lat": -7.01794,
-      "lng": 107.64882
+      "name": "GBB. CISARANTEN",
+      "primaryRegency": "Kab. Bandung",
+      "lat": -7.053175,
+      "lng": 107.551608
     },
     {
       "id": "W06",
-      "hub": "Bandung",
-      "lat": -6.94563,
-      "lng": 107.47531
+      "name": "GBB. BOJONG HERANG",
+      "primaryRegency": "Kab. Cianjur",
+      "lat": -6.814678,
+      "lng": 107.106329
     },
     {
       "id": "W07",
-      "hub": "Bandung",
-      "lat": -6.85199,
-      "lng": 107.54376
+      "name": "GBB. BOJONG KARANG TENGAH",
+      "primaryRegency": "Kab. Cianjur",
+      "lat": -6.778324,
+      "lng": 107.137264
     },
     {
       "id": "W08",
-      "hub": "Bandung",
-      "lat": -7.00079,
-      "lng": 107.65705
+      "name": "GBB. PASEH KIDUL",
+      "primaryRegency": "Kab. Sumedang",
+      "lat": -6.886126,
+      "lng": 107.920839
     },
     {
       "id": "W09",
-      "hub": "Sukabumi",
-      "lat": -6.99131,
-      "lng": 106.98682
+      "name": "GBB. BANJAR",
+      "primaryRegency": "Kab. Ciamis",
+      "lat": -7.310333,
+      "lng": 108.33186
     },
     {
       "id": "W10",
-      "hub": "Sukabumi",
-      "lat": -6.95352,
-      "lng": 106.91606
+      "name": "GBB. PAMALAYAN",
+      "primaryRegency": "Kab. Ciamis",
+      "lat": -7.351655,
+      "lng": 108.324394
     },
     {
       "id": "W11",
-      "hub": "Sukabumi",
-      "lat": -6.85866,
-      "lng": 106.93462
+      "name": "GBB. BINONG",
+      "primaryRegency": "Kab. Subang",
+      "lat": -6.531576,
+      "lng": 107.754915
     },
     {
       "id": "W12",
-      "hub": "Sukabumi",
-      "lat": -6.89317,
-      "lng": 106.97512
+      "name": "GBB. KARANGANYAR",
+      "primaryRegency": "Kab. Subang",
+      "lat": -6.584402,
+      "lng": 107.722331
     },
     {
       "id": "W13",
-      "hub": "Sukabumi",
-      "lat": -6.88399,
-      "lng": 106.97514
+      "name": "GBB. RANCAUDIK",
+      "primaryRegency": "Kab. Subang",
+      "lat": -6.611213,
+      "lng": 107.753471
     },
     {
       "id": "W14",
-      "hub": "Sukabumi",
-      "lat": -6.97271,
-      "lng": 106.87951
+      "name": "GBB. TANJUNGRASA",
+      "primaryRegency": "Kab. Subang",
+      "lat": -6.5334,
+      "lng": 107.781116
     },
     {
       "id": "W15",
-      "hub": "Cirebon",
-      "lat": -6.66767,
-      "lng": 108.52039
+      "name": "GBB. ARJAWINANGUN",
+      "primaryRegency": "Kab. Majalengka",
+      "lat": -6.806601,
+      "lng": 108.246
     },
     {
       "id": "W16",
-      "hub": "Cirebon",
-      "lat": -6.57402,
-      "lng": 108.54274
+      "name": "GBB. KASOKANDEL",
+      "primaryRegency": "Kab. Majalengka",
+      "lat": -6.827078,
+      "lng": 108.194527
     },
     {
       "id": "W17",
-      "hub": "Cirebon",
-      "lat": -6.78407,
-      "lng": 108.49862
+      "name": "GBB. CIWANGI",
+      "primaryRegency": "Kab. Purwakarta",
+      "lat": -6.565812,
+      "lng": 107.399494
     },
     {
       "id": "W18",
-      "hub": "Cirebon",
-      "lat": -6.60935,
-      "lng": 108.60976
+      "name": "GBB. CIPERNA",
+      "primaryRegency": "Kab. Cirebon",
+      "lat": -6.730767,
+      "lng": 108.54095
     },
     {
       "id": "W19",
-      "hub": "Cirebon",
-      "lat": -6.64492,
-      "lng": 108.59439
+      "name": "GBB. LARANGAN",
+      "primaryRegency": "Kab. Cirebon",
+      "lat": -6.67496,
+      "lng": 108.5303
     },
     {
       "id": "W20",
-      "hub": "Cirebon",
-      "lat": -6.7129,
-      "lng": 108.65787
+      "name": "GBB. MERTAPADA KULON",
+      "primaryRegency": "Kab. Cirebon",
+      "lat": -6.693325,
+      "lng": 108.588057
     },
     {
       "id": "W21",
-      "hub": "Purwakarta",
-      "lat": -6.59378,
-      "lng": 107.34391
+      "name": "GBB. PEGAMBIRAN",
+      "primaryRegency": "Kab. Cirebon",
+      "lat": -6.686879,
+      "lng": 108.531941
     },
     {
       "id": "W22",
-      "hub": "Purwakarta",
-      "lat": -6.65318,
-      "lng": 107.50717
+      "name": "GBB. TUK",
+      "primaryRegency": "Kab. Cirebon",
+      "lat": -6.668202,
+      "lng": 108.538803
     },
     {
       "id": "W23",
-      "hub": "Purwakarta",
-      "lat": -6.52366,
-      "lng": 107.44763
+      "name": "GBB. BANDORASA",
+      "primaryRegency": "Kab. Kuningan",
+      "lat": -6.970601,
+      "lng": 108.450422
     },
     {
       "id": "W24",
-      "hub": "Purwakarta",
-      "lat": -6.50241,
-      "lng": 107.41928
+      "name": "GBB. SIDARAJA",
+      "primaryRegency": "Kab. Kuningan",
+      "lat": -6.974042,
+      "lng": 108.446967
     },
     {
       "id": "W25",
-      "hub": "Purwakarta",
-      "lat": -6.42718,
-      "lng": 107.47587
+      "name": "GBB. AMANSARI",
+      "primaryRegency": "Kab. Karawang",
+      "lat": -6.343515,
+      "lng": 107.375791
     },
     {
       "id": "W26",
-      "hub": "Tasikmalaya",
-      "lat": -7.3727,
-      "lng": 108.26716
+      "name": "GBB. JATIRAGAS",
+      "primaryRegency": "Kab. Karawang",
+      "lat": -6.302183,
+      "lng": 107.355394
     },
     {
       "id": "W27",
-      "hub": "Tasikmalaya",
-      "lat": -7.38832,
-      "lng": 108.1792
+      "name": "GBB. PANGULAH UTARA",
+      "primaryRegency": "Kab. Karawang",
+      "lat": -6.355269,
+      "lng": 107.349799
     },
     {
       "id": "W28",
-      "hub": "Tasikmalaya",
-      "lat": -7.36856,
-      "lng": 108.29042
+      "name": "GBB. PURWASARI I",
+      "primaryRegency": "Kab. Karawang",
+      "lat": -6.356099,
+      "lng": 107.318167
     },
     {
       "id": "W29",
-      "hub": "Tasikmalaya",
-      "lat": -7.27052,
-      "lng": 108.21532
+      "name": "GBB. PURWASARI II",
+      "primaryRegency": "Kab. Karawang",
+      "lat": -6.358109,
+      "lng": 107.342386
     },
     {
       "id": "W30",
-      "hub": "Tasikmalaya",
-      "lat": -7.34955,
-      "lng": 108.16567
+      "name": "GBB. TEGALWARU",
+      "primaryRegency": "Kab. Karawang",
+      "lat": -6.299473,
+      "lng": 107.366529
     },
     {
       "id": "W31",
-      "hub": "Karawang",
-      "lat": -6.38796,
-      "lng": 107.22592
+      "name": "GBB. CANDANGPINGGAN",
+      "primaryRegency": "Kab. Indramayu",
+      "lat": -6.345743,
+      "lng": 108.280472
     },
     {
       "id": "W32",
-      "hub": "Karawang",
-      "lat": -6.29072,
-      "lng": 107.29366
+      "name": "GBB. KEDUNGWUNGU",
+      "primaryRegency": "Kab. Indramayu",
+      "lat": -6.324416,
+      "lng": 108.277646
     },
     {
       "id": "W33",
-      "hub": "Karawang",
-      "lat": -6.32403,
-      "lng": 107.42416
+      "name": "GBB. LEUWIGEDE",
+      "primaryRegency": "Kab. Indramayu",
+      "lat": -6.290785,
+      "lng": 108.341449
     },
     {
       "id": "W34",
-      "hub": "Karawang",
-      "lat": -6.30368,
-      "lng": 107.36738
+      "name": "GBB. LOSARANG",
+      "primaryRegency": "Kab. Indramayu",
+      "lat": -6.310035,
+      "lng": 108.360755
     },
     {
       "id": "W35",
-      "hub": "Bogor",
-      "lat": -6.53205,
-      "lng": 106.89354
+      "name": "GBB. PEKANDANGAN",
+      "primaryRegency": "Kab. Indramayu",
+      "lat": -6.327694,
+      "lng": 108.28894
     },
     {
       "id": "W36",
-      "hub": "Bogor",
-      "lat": -6.66878,
-      "lng": 106.83671
+      "name": "GBB. SINGAKERTA I",
+      "primaryRegency": "Kab. Indramayu",
+      "lat": -6.350826,
+      "lng": 108.28393
     },
     {
       "id": "W37",
-      "hub": "Bogor",
-      "lat": -6.56703,
-      "lng": 106.88336
+      "name": "GBB. SINGAKERTA II",
+      "primaryRegency": "Kab. Indramayu",
+      "lat": -6.293233,
+      "lng": 108.347391
     },
     {
       "id": "W38",
-      "hub": "Bogor",
-      "lat": -6.59715,
-      "lng": 106.90536
+      "name": "GBB. TEGAL GIRANG",
+      "primaryRegency": "Kab. Indramayu",
+      "lat": -6.305592,
+      "lng": 108.339057
     }
   ],
   "destinations": [
@@ -237,155 +279,375 @@
       "name": "Kota Bandung",
       "lat": -6.9175,
       "lng": 107.6191,
-      "allocationTons": 2019,
-      "nearestOriginId": "W03"
+      "allocationTons": 1093.33
     },
     {
       "name": "Kab. Bandung",
       "lat": -7.0264,
       "lng": 107.5709,
-      "allocationTons": 999,
-      "nearestOriginId": "W05"
+      "allocationTons": 2238.24
     },
     {
       "name": "Kab. Bandung Barat",
       "lat": -6.836,
       "lng": 107.488,
-      "allocationTons": 1385,
-      "nearestOriginId": "W07"
+      "allocationTons": 2118.29
     },
     {
       "name": "Kota Cimahi",
       "lat": -6.8841,
       "lng": 107.5413,
-      "allocationTons": 1302,
-      "nearestOriginId": "W07"
+      "allocationTons": 371.77
     },
     {
       "name": "Kab. Sumedang",
       "lat": -6.8583,
       "lng": 107.9225,
-      "allocationTons": 2202,
-      "nearestOriginId": "W02"
+      "allocationTons": 1619.51
     },
     {
       "name": "Kab. Garut",
       "lat": -7.2158,
       "lng": 107.9081,
-      "allocationTons": 2089,
-      "nearestOriginId": "W30"
+      "allocationTons": 2968.86
     },
     {
       "name": "Kota Tasikmalaya",
       "lat": -7.3506,
       "lng": 108.2172,
-      "allocationTons": 2505,
-      "nearestOriginId": "W30"
+      "allocationTons": 1592.66
     },
     {
       "name": "Kab. Tasikmalaya",
       "lat": -7.3274,
       "lng": 108.2207,
-      "allocationTons": 1090,
-      "nearestOriginId": "W29"
+      "allocationTons": 2619.2
     },
     {
       "name": "Kab. Ciamis",
       "lat": -7.3269,
       "lng": 108.3535,
-      "allocationTons": 1632,
-      "nearestOriginId": "W28"
+      "allocationTons": 2022.88
     },
     {
       "name": "Kota Banjar",
       "lat": -7.3746,
       "lng": 108.5339,
-      "allocationTons": 1006,
-      "nearestOriginId": "W28"
+      "allocationTons": 177.5
     },
     {
       "name": "Kab. Pangandaran",
       "lat": -7.683,
       "lng": 108.6535,
-      "allocationTons": 1294,
-      "nearestOriginId": "W28"
+      "allocationTons": 475.91
     },
     {
       "name": "Kab. Cianjur",
       "lat": -6.8168,
       "lng": 107.1425,
-      "allocationTons": 1777,
-      "nearestOriginId": "W13"
+      "allocationTons": 2761.66
     },
     {
       "name": "Kab. Sukabumi",
       "lat": -6.95,
       "lng": 106.83,
-      "allocationTons": 1001,
-      "nearestOriginId": "W14"
+      "allocationTons": 2692.3
     },
     {
       "name": "Kota Sukabumi",
       "lat": -6.9277,
       "lng": 106.93,
-      "allocationTons": 1263,
-      "nearestOriginId": "W10"
+      "allocationTons": 262.44
     },
     {
       "name": "Kab. Cirebon",
       "lat": -6.7063,
       "lng": 108.557,
-      "allocationTons": 2039,
-      "nearestOriginId": "W15"
+      "allocationTons": 2801.9
     },
     {
       "name": "Kota Cirebon",
       "lat": -6.732,
       "lng": 108.5523,
-      "allocationTons": 1848,
-      "nearestOriginId": "W15"
+      "allocationTons": 389.67
     },
     {
       "name": "Kab. Majalengka",
       "lat": -6.836,
       "lng": 108.2273,
-      "allocationTons": 1297,
-      "nearestOriginId": "W17"
+      "allocationTons": 1701.32
     },
     {
       "name": "Kab. Kuningan",
       "lat": -6.9762,
       "lng": 108.4839,
-      "allocationTons": 1928,
-      "nearestOriginId": "W17"
+      "allocationTons": 1233.57
     },
     {
       "name": "Kab. Indramayu",
       "lat": -6.3264,
       "lng": 108.32,
-      "allocationTons": 2342,
-      "nearestOriginId": "W16"
+      "allocationTons": 2591.96
     },
     {
       "name": "Kab. Subang",
       "lat": -6.5695,
       "lng": 107.7604,
-      "allocationTons": 972,
-      "nearestOriginId": "W22"
+      "allocationTons": 1992.12
     },
     {
       "name": "Kab. Karawang",
       "lat": -6.3227,
       "lng": 107.3376,
-      "allocationTons": 2335,
-      "nearestOriginId": "W34"
+      "allocationTons": 1856.59
     },
     {
       "name": "Kab. Purwakarta",
       "lat": -6.5569,
       "lng": 107.4432,
-      "allocationTons": 2129,
-      "nearestOriginId": "W23"
+      "allocationTons": 872.25
+    }
+  ],
+  "edges": [
+    {
+      "originId": "W01",
+      "destination": "Kab. Garut",
+      "tons": 2968.86
+    },
+    {
+      "originId": "W02",
+      "destination": "Kab. Sukabumi",
+      "tons": 2692.3
+    },
+    {
+      "originId": "W03",
+      "destination": "Kab. Tasikmalaya",
+      "tons": 2619.2
+    },
+    {
+      "originId": "W04",
+      "destination": "Kab. Bandung Barat",
+      "tons": 2118.29
+    },
+    {
+      "originId": "W05",
+      "destination": "Kab. Bandung",
+      "tons": 1788.15
+    },
+    {
+      "originId": "W07",
+      "destination": "Kab. Cianjur",
+      "tons": 1655.808
+    },
+    {
+      "originId": "W08",
+      "destination": "Kab. Sumedang",
+      "tons": 1619.51
+    },
+    {
+      "originId": "W03",
+      "destination": "Kota Tasikmalaya",
+      "tons": 1592.66
+    },
+    {
+      "originId": "W10",
+      "destination": "Kab. Ciamis",
+      "tons": 1299.16
+    },
+    {
+      "originId": "W14",
+      "destination": "Kab. Subang",
+      "tons": 1159.47
+    },
+    {
+      "originId": "W06",
+      "destination": "Kab. Cianjur",
+      "tons": 1105.85
+    },
+    {
+      "originId": "W05",
+      "destination": "Kota Bandung",
+      "tons": 1093.33
+    },
+    {
+      "originId": "W16",
+      "destination": "Kab. Majalengka",
+      "tons": 999.94
+    },
+    {
+      "originId": "W17",
+      "destination": "Kab. Purwakarta",
+      "tons": 872.25
+    },
+    {
+      "originId": "W19",
+      "destination": "Kab. Cirebon",
+      "tons": 779.99
+    },
+    {
+      "originId": "W22",
+      "destination": "Kab. Cirebon",
+      "tons": 774.128
+    },
+    {
+      "originId": "W09",
+      "destination": "Kab. Ciamis",
+      "tons": 723.72
+    },
+    {
+      "originId": "W23",
+      "destination": "Kab. Kuningan",
+      "tons": 723.57
+    },
+    {
+      "originId": "W15",
+      "destination": "Kab. Majalengka",
+      "tons": 701.38
+    },
+    {
+      "originId": "W12",
+      "destination": "Kab. Subang",
+      "tons": 600.01
+    },
+    {
+      "originId": "W09",
+      "destination": "Kab. Pangandaran",
+      "tons": 475.91
+    },
+    {
+      "originId": "W21",
+      "destination": "Kab. Cirebon",
+      "tons": 465.28
+    },
+    {
+      "originId": "W04",
+      "destination": "Kab. Bandung",
+      "tons": 450.09
+    },
+    {
+      "originId": "W26",
+      "destination": "Kab. Karawang",
+      "tons": 432.48
+    },
+    {
+      "originId": "W20",
+      "destination": "Kab. Cirebon",
+      "tons": 421.65
+    },
+    {
+      "originId": "W29",
+      "destination": "Kab. Karawang",
+      "tons": 387.58
+    },
+    {
+      "originId": "W21",
+      "destination": "Kota Cirebon",
+      "tons": 385.72
+    },
+    {
+      "originId": "W04",
+      "destination": "Kota Cimahi",
+      "tons": 371.77
+    },
+    {
+      "originId": "W32",
+      "destination": "Kab. Indramayu",
+      "tons": 361.459
+    },
+    {
+      "originId": "W18",
+      "destination": "Kab. Cirebon",
+      "tons": 360.85
+    },
+    {
+      "originId": "W37",
+      "destination": "Kab. Indramayu",
+      "tons": 345.73
+    },
+    {
+      "originId": "W34",
+      "destination": "Kab. Indramayu",
+      "tons": 336.76
+    },
+    {
+      "originId": "W35",
+      "destination": "Kab. Indramayu",
+      "tons": 333.09
+    },
+    {
+      "originId": "W31",
+      "destination": "Kab. Indramayu",
+      "tons": 314.03
+    },
+    {
+      "originId": "W25",
+      "destination": "Kab. Karawang",
+      "tons": 311.58
+    },
+    {
+      "originId": "W38",
+      "destination": "Kab. Indramayu",
+      "tons": 308.65
+    },
+    {
+      "originId": "W27",
+      "destination": "Kab. Karawang",
+      "tons": 300.87
+    },
+    {
+      "originId": "W18",
+      "destination": "Kab. Kuningan",
+      "tons": 300.0
+    },
+    {
+      "originId": "W36",
+      "destination": "Kab. Indramayu",
+      "tons": 299.53
+    },
+    {
+      "originId": "W33",
+      "destination": "Kab. Indramayu",
+      "tons": 292.707
+    },
+    {
+      "originId": "W30",
+      "destination": "Kab. Karawang",
+      "tons": 263.74
+    },
+    {
+      "originId": "W02",
+      "destination": "Kota Sukabumi",
+      "tons": 262.44
+    },
+    {
+      "originId": "W24",
+      "destination": "Kab. Kuningan",
+      "tons": 210.0
+    },
+    {
+      "originId": "W09",
+      "destination": "Kota Banjar",
+      "tons": 177.5
+    },
+    {
+      "originId": "W28",
+      "destination": "Kab. Karawang",
+      "tons": 160.34
+    },
+    {
+      "originId": "W11",
+      "destination": "Kab. Subang",
+      "tons": 139.07
+    },
+    {
+      "originId": "W13",
+      "destination": "Kab. Subang",
+      "tons": 93.57
+    },
+    {
+      "originId": "W18",
+      "destination": "Kota Cirebon",
+      "tons": 3.95
     }
   ]
 }

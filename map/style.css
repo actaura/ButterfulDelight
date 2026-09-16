@@ -93,8 +93,6 @@ html, body {
 .flow-line {
   fill: none;
   stroke: var(--green);
-  stroke-width: 1.4;
-  stroke-opacity: 0.4;
   stroke-linecap: round;
 }
 

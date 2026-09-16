@@ -58,7 +58,7 @@ async function main() {
         <div class="stat-row-label">Regencies/Cities</div>
       </div>
       <div class="stat-row-item">
-        <div class="stat-row-value">${d3.sum(points.destinations, d => d.allocationTons).toLocaleString("en-US")}</div>
+        <div class="stat-row-value">${Math.round(d3.sum(points.destinations, d => d.allocationTons)).toLocaleString("en-US")}</div>
         <div class="stat-row-label">Tons Allocated</div>
       </div>
     </div>
@@ -67,7 +67,7 @@ async function main() {
       <div class="legend">
         <div class="legend-row">
           <svg class="legend-swatch" width="14" height="14"><circle cx="7" cy="7" r="4" class="origin-dot"></circle></svg>
-          <span>Bulog warehouse (illustrative placement)</span>
+          <span>Bulog warehouse (regency-level position)</span>
         </div>
         <div class="legend-row">
           <svg class="legend-swatch" width="18" height="18"><circle cx="9" cy="9" r="7" class="destination-dot"></circle></svg>
@@ -101,20 +101,27 @@ async function main() {
   const project = (d) => projection([d.lng, d.lat]);
 
   const originById = Object.fromEntries(points.origins.map(o => [o.id, o]));
-  const links = points.destinations.map(d => ({
-    source: originById[d.nearestOriginId],
-    target: d,
+  const destByName = Object.fromEntries(points.destinations.map(d => [d.name, d]));
+  const links = points.edges.map(e => ({
+    source: originById[e.originId],
+    target: destByName[e.destination],
+    tons: e.tons,
   }));
+
+  const widthScale = d3.scaleSqrt()
+    .domain(d3.extent(links, (d) => d.tons))
+    .range([0.75, 7]);
+  const opacityScale = d3.scaleSqrt()
+    .domain(d3.extent(links, (d) => d.tons))
+    .range([0.28, 0.75]);
 
   const linksGroup = svg.append("g").attr("class", "flow-lines");
   linksGroup.selectAll("path")
     .data(links)
     .join("path")
     .attr("class", "flow-line")
-    .attr("stroke-dasharray", function () {
-      const len = this.getTotalLength ? null : null;
-      return null;
-    })
+    .attr("stroke-width", (d) => widthScale(d.tons))
+    .attr("stroke-opacity", (d) => opacityScale(d.tons))
     .attr("d", (d) => {
       const [x1, y1] = project(d.source);
       const [x2, y2] = project(d.target);
