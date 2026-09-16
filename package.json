@@ -1,0 +1,12 @@
+{
+  "name": "bansos-carousel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LinkedIn/Instagram carousel: simulasi optimasi rute & biaya distribusi bansos beras Jabar",
+  "scripts": {
+    "generate": "node scripts/generate.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.47.0"
+  }
+}

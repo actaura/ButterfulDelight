@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "author": "Taufiq Raihan Achmad",
+    "role": "Logistics Management Student, ULBI — ex Intern, PT Pos Indonesia",
+    "footerName": "Taufiq Raihan Achmad",
+    "totalSlides": 8
+  },
+  "slides": [
+    {
+      "id": 1,
+      "layout": "cover",
+      "kicker": "Data Analysis Project",
+      "title": "Simulasi Optimasi Rute & Biaya Distribusi Bansos Beras",
+      "subtitle": "Studi Kasus: Kantor Regional III Bandung, PT Pos Indonesia — Jawa Barat",
+      "author": "Taufiq Raihan Achmad",
+      "authorRole": "Mahasiswa Logistics Management, ULBI · Eks-PKL PT Pos Indonesia",
+      "swipeLabel": "Geser untuk lihat hasil analisis"
+    },
+    {
+      "id": 2,
+      "layout": "context",
+      "eyebrow": "Konteks Masalah",
+      "title": "Skala distribusi yang saya analisis",
+      "description": "Program bansos beras Kanreg III Bandung menjangkau puluhan gudang dan ribuan titik bagi di seluruh Jawa Barat — kompleksitas rute yang besar untuk dioptimasi.",
+      "stats": [
+        { "value": "38", "label": "Gudang Bulog (origin)" },
+        { "value": "3.327", "label": "Titik bagi desa/kelurahan" },
+        { "value": "22", "label": "Kabupaten/kota di Jawa Barat" },
+        { "value": "±36.454 ton", "label": "Total alokasi beras" }
+      ]
+    },
+    {
+      "id": 3,
+      "layout": "insight",
+      "eyebrow": "Data Issue yang Ditemukan",
+      "title": "Kolom tarif angkutan kosong",
+      "description": "Di data asli, kolom tarif/biaya angkutan belum terisi. Alih-alih berhenti, saya jadikan ini titik masuk analisis: membangun model simulasi biaya dengan asumsi tarif yang terdokumentasi untuk latihan skill data analysis.",
+      "highlight": "Data gap → jadi entry point analisis, bukan jalan buntu."
+    },
+    {
+      "id": 4,
+      "layout": "methodology",
+      "eyebrow": "Metodologi",
+      "title": "2 langkah simulasi",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Konsolidasi Ritase",
+          "description": "Gabungkan pengiriman dengan origin & titik bagi sama, hitung ulang jumlah ritase dari total alokasi — mengurangi truk yang jalan dengan muatan di bawah kapasitas.",
+          "tag": "Murni dari data"
+        },
+        {
+          "number": "02",
+          "title": "Simulasi Efisiensi Rute Tambahan",
+          "description": "Multi-drop antar titik berdekatan & realokasi ke gudang terdekat, dengan parameter asumsi yang terdokumentasi.",
+          "tag": "Asumsi terdokumentasi"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "layout": "bignumber",
+      "eyebrow": "Before vs After",
+      "title": "Total biaya midlemile",
+      "before": { "label": "Sebelum", "value": "Rp 6,67 M" },
+      "after": { "label": "Sesudah", "value": "Rp 4,47 M" },
+      "delta": "-33%",
+      "deltaLabel": "reduksi biaya"
+    },
+    {
+      "id": 6,
+      "layout": "metrics",
+      "eyebrow": "Breakdown Metrik Pendukung",
+      "title": "Konsolidasi rute & ritase",
+      "metrics": [
+        {
+          "label": "Jumlah Rute",
+          "before": "8.591",
+          "after": "4.869"
+        },
+        {
+          "label": "Jumlah Ritase",
+          "before": "11.355",
+          "after": "9.710"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "layout": "tools",
+      "eyebrow": "Tools & Skill",
+      "title": "Yang saya pakai di project ini",
+      "items": [
+        { "name": "Python", "detail": "pandas, openpyxl — cleaning & simulasi data" },
+        { "name": "Excel", "detail": "Formula live (bukan hardcode), dashboard workbook" },
+        { "name": "Data Cleaning", "detail": "Parsing format desimal koma, forward-fill data kosong" },
+        { "name": "Dokumentasi Asumsi", "detail": "Setiap parameter simulasi dicatat & bisa ditelusuri" }
+      ]
+    },
+    {
+      "id": 8,
+      "layout": "closing",
+      "eyebrow": "Key Takeaway",
+      "title": "Data gap bukan akhir analisis — itu awalnya",
+      "description": "Dari kolom tarif yang kosong, project ini berkembang jadi simulasi optimasi rute yang memangkas 33% biaya midlemile secara terdokumentasi dan dapat diaudit.",
+      "contactLabel": "Terima kasih sudah membaca",
+      "contactName": "Taufiq Raihan Achmad",
+      "contactHandle": "taufiq.raihan.achmad@gmail.com"
+    }
+  ]
+}
